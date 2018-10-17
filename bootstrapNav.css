@@ -27,7 +27,7 @@
 }
 
 .navbar li.active {
-    background-color: rgb(236, 17, 207); 
+    background-color: rgb(236, 17, 17); 
     color: white;
     font-size: 25px;
     border-radius: 5px 5px 5px 5px;
