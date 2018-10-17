@@ -4,27 +4,57 @@
     <title>Title</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="navBar.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="bootstrapNav.css">
     <link rel="stylesheet" href="cenema.css">
   </head>
   <body>
-    
-    <ul class="topnav">
-        <li><a href="#Logo"> <h1>Bio</h1> </a></li>
-        <li><a href="#news">Biljetter</a></li>
-        <li><a href="#news">Filmer</a></li>
-        <li><a href="news.html">Nyheter</a></li>
-        <li><a href="cenema.html" class="active">Biografer</a></li>
-        <li><a href="#news">Om Oss</a></li>
-        <li><a href="#news">Snaks</a></li>
-        <li><a href="#news">Events</a></li>
-        <ul class="topRight">
-            <li><a href="#">Registrera</a></li>
-            <li><a href="#">Loga in</a></li>
-            <li><input type="text" placeholder="Sök..."></li>
-        </ul>
-      </ul>
+
+        <section>
+                <article class="nav-article">
+                        <nav class="navbar navbar-expand-lg navbar-dark">
+                                <a class="navbar-brand" href="#"><h1>Bio</h1></a>
+                                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                  <span class="navbar-toggler-icon"></span>
+                                </button>
+                              
+                                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                  <ul class="navbar-nav mr-auto">
+                                    <li class="nav-item">
+                                      <a class="nav-link" href="#">Biljetter</a>
+                                    </li>
+                                    <li class="nav-item">
+                                      <a class="nav-link" href="#">Filmer</a>
+                                    </li>
+                                    <li class="nav-item">
+                                      <a class="nav-link" href="index.html">Nyheter</a>
+                                    </li>
+                                    <li class="nav-item active">
+                                      <a class="nav-link" href="cenema.html">Biografer <span class="sr-only">(current)</span></a>
+                                    </li>
+                                    <li class="nav-item">
+                                      <a class="nav-link" href="#">Om Oss</a>
+                                    </li>
+                                    <li class="nav-item">
+                                      <a class="nav-link" href="#">Snacks</a>
+                                    </li>
+                                    <li class="nav-item">
+                                      <a class="nav-link" href="#">Events</a>
+                                    </li>
+                                  </ul>
+                                  <form class="form-inline my-2 my-lg-0">
+                                      <button class="btn btn-link">Register</button>
+                                      <button class="btn btn-link">Loga in</button>
+                                    <input class="form-control mr-sm-2" type="search" placeholder="Sök..." aria-label="Search">
+                                    <button class="btn btn my-2 my-sm-0" type="submit"><i class="fa fa-search    "></i></button>
+                                  </form>
+                                </div>
+                              </nav>
+                </article>
+            </section>
 
       <main>
           <section class="news-article">
@@ -32,7 +62,7 @@
                   <h1>Biografer</h1>
                   <div class="parent-div">
                       <div class="image-div">
-                          <img src="../BioBio.se/images/pic1.jpg" alt="">
+                          <img src="../BioBio.se/images/pic.jpg" alt="">
                       </div>
                       <div class="news-div">
                           <h3>Biograf 1</h3>
@@ -43,7 +73,7 @@
                   </div>
                   <div class="parent-div">
                       <div class="image-div">
-                          <img src="../BioBio.se/images/pic.jpg" alt="">
+                          <img src="../BioBio.se/images/pic1.jpg" alt="">
                       </div>
                       <div class="news-div">
                             <h3>Biograf 2</h3>
@@ -54,7 +84,7 @@
                   </div>
                   <div class="parent-div">
                       <div class="image-div">
-                          <img src="../BioBio.se/images/pic1.jpg" alt="">
+                          <img src="../BioBio.se/images/pic.jpg" alt="">
                       </div>
                       <div class="news-div">
                             <h3>Biograf 3</h3>
@@ -65,7 +95,7 @@
                   </div>
                   <div class="parent-div">
                       <div class="image-div">
-                          <img src="../BioBio.se/images/pic.jpg" alt="">
+                          <img src="../BioBio.se/images/pic1.jpg" alt="">
                       </div>
                       <div class="news-div">
                             <h3>Biograf 4</h3>
