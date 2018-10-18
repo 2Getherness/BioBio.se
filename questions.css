@@ -1,0 +1,27 @@
+body {
+    background-color: black;
+    color: rgb(182, 182, 182);
+}
+main {
+    margin: 100px 20%;
+}
+.questions-article h1 {
+    font-family: serif;
+    font-size: 30px
+}
+ .questions-article dl > li {
+    list-style-type: none;
+    margin-bottom: 5px;
+    font-size: 20px
+}
+.questions-article dl > li::before {
+    content: '-';
+    color: red;
+    margin-right: 5px;
+}
+.questions-article .div3 {
+    font-size: 20px;
+    border: 1px dashed white;
+    padding: 20px 10px;
+    text-align: center
+}

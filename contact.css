@@ -1,0 +1,17 @@
+body {
+    background-color: black;
+    color: rgb(182, 182, 182);
+}
+main {
+    padding: 100px 20%;
+}
+.main-article h1 {
+    font-family: serif;
+    font-size: 30px;
+}
+.main-article .contact-div1, .contact-div2, .contact-div3, .contact-div4 {
+    margin-top: 20px
+}
+.main-article .contact-div2 span, .contact-div3 span, .contact-div4 span {
+    display: block;
+}

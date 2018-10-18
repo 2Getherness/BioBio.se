@@ -1,5 +1,6 @@
 .container {
-    margin: 5% 10% 5% 10%;
+    width: 90%;
+    padding-top: 50px;
 }
 .parent-div :first-child {
     margin-right: 60px;

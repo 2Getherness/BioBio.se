@@ -1,0 +1,54 @@
+body {
+    background-color: black;
+    color: rgb(182, 182, 182);
+}
+main {
+    margin: 100px 20%;
+}
+.feedback-aticle h1 {
+    font-family: serif;
+    font-size: 30px
+}
+.name-div {
+    display: flex;
+    margin-bottom: 50px;
+}
+.name-div .div1,.name-div  .div2,.name-div  .div3{
+    padding: 0;
+    width: 33.3%
+}
+.name-div .div1 input ,.div2 input, .div3 input{
+    display: block;
+    margin-top: 15px;
+    width: 90%;
+    font-size: 20px;
+}
+.feedback-aticle #feedback {
+    width: 100%;
+    height: 100%;
+    font-size: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+}
+.feedback-aticle .submit-btn {
+    margin-top: 10px;
+    padding: 5px 10px;
+    font-size: 20px;
+    background-color: rgb(108, 201, 108);
+    color: rgb(0, 0, 0);
+    border-radius: 10px;
+    border: none
+}
+.feedback-aticle .submit-btn:hover{
+    background-color: aquamarine;
+    border: 1px solid rgb(161, 192, 188);
+    box-shadow: 0 0 10px 0 rgb(216, 216, 226)
+}
+@media screen and (max-width: 825px) {
+    main {
+        margin: 20px 5%;
+    }
+    .name-div {
+        display: block;
+        text-align: leftc
+    }
+}
