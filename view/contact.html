@@ -6,10 +6,11 @@
     <meta charset="utf-8">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="bootstrapNav.css">
-    <link rel="stylesheet" href="cenema.css">
+    <link rel="stylesheet" href="../css/contact.css">
+    <link rel="stylesheet" href="../css/bootstrapNav.css">
+
   </head>
   <body>
 
@@ -30,10 +31,10 @@
                                       <a class="nav-link" href="#">Filmer</a>
                                     </li>
                                     <li class="nav-item">
-                                      <a class="nav-link" href="index.html">Nyheter</a>
+                                      <a class="nav-link" href="../index.html">Nyheter <span class="sr-only">(current)</span></a>
                                     </li>
-                                    <li class="nav-item active">
-                                      <a class="nav-link" href="cenema.html">Biografer <span class="sr-only">(current)</span></a>
+                                    <li class="nav-item">
+                                      <a class="nav-link" href="../view/cenema.html">Biografer</a>
                                     </li>
                                     <li class="nav-item">
                                       <a class="nav-link" href="#">Om Oss</a>
@@ -56,58 +57,77 @@
                 </article>
             </section>
 
-      <main>
-          <section class="news-article">
-              <div class="container">
-                  <h1>Biografer</h1>
-                  <div class="parent-div">
-                      <div class="image-div">
-                          <img src="../BioBio.se/images/pic.jpg" alt="">
-                      </div>
-                      <div class="news-div">
-                          <h3>Biograf 1</h3>
-                          <p>Adress</p>
-                          <p>Telefone</p>
-                          <p>111Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, sapiente sed. Illum quisquam possimus hic quam deserunt repellendus accusamus aperiam reiciendis cupiditate harum quae ipsum modi, ipsam magni perspiciatis odio.</p>
-                      </div>
-                  </div>
-                  <div class="parent-div">
-                      <div class="image-div">
-                          <img src="../BioBio.se/images/pic1.jpg" alt="">
-                      </div>
-                      <div class="news-div">
-                            <h3>Biograf 2</h3>
-                            <p>Adress</p>
-                            <p>Telefone</p>
-                          <p>222Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, sapiente sed. Illum quisquam possimus hic quam deserunt repellendus accusamus aperiam reiciendis cupiditate harum quae ipsum modi, ipsam magni perspiciatis odio.</p>
-                      </div>
-                  </div>
-                  <div class="parent-div">
-                      <div class="image-div">
-                          <img src="../BioBio.se/images/pic.jpg" alt="">
-                      </div>
-                      <div class="news-div">
-                            <h3>Biograf 3</h3>
-                            <p>Adress</p>
-                            <p>Telefone</p>
-                          <p>222Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, sapiente sed. Illum quisquam possimus hic quam deserunt repellendus accusamus aperiam reiciendis cupiditate harum quae ipsum modi, ipsam magni perspiciatis odio.</p>
-                      </div>
-                  </div>
-                  <div class="parent-div">
-                      <div class="image-div">
-                          <img src="../BioBio.se/images/pic1.jpg" alt="">
-                      </div>
-                      <div class="news-div">
-                            <h3>Biograf 4</h3>
-                            <p>Adress</p>
-                            <p>Telefone</p>
-                          <p>111Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, sapiente sed. Illum quisquam possimus hic quam deserunt repellendus accusamus aperiam reiciendis cupiditate harum quae ipsum modi, ipsam magni perspiciatis odio.</p>
-                      </div>
-                  </div>
-              </div>
-          </section>
-      </main>
+    <main>
+        <section>
+            <article class="main-article">
+                <h1>Kontakta Oss</h1>
+                <div class="contact-div1">
+                <p>Kontakta oss via E-post</p>
+                <p>På e-postadressen info@biobio.se kontaktar du oss om frågor eller åsikter som gäller biobesöket, webbplatsen osv.</p>
+                </div>
+                <div class="contact-div2">
+                    <span> För reservation av rullstolsplats </span> 
+                    <span>Telefon 08-56 26 00 00 </span >
+                    <span>Öppet måndag - fredag 10:00-17:00, lördag - söndag 11:00-16:00</span >
+                </div>
+                <div class="contact-div3">
+                    <span>För gruppbokning (fler än 8 biljetter) </span>
+                    <span>Telefon 08-56 26 00 00 </span> 
+                    <span>Öppet måndag - fredag 10:00-17:00, lördag - söndag 11:00-16:00</span>
+                </div>
+                <div class="contact-div3">
+                    <span>För gruppbokning (fler än 8 biljetter)
+                    <span>Telefon 08-56 26 00 00</span>   
+                    <span>Öppet måndag - fredag 10:00-17:00, lördag - söndag 11:00-16:00</span>
+                </div>
+            </article>
+        </section>
+    </main>
 
+    <div class="newsLetter">
+      <span>Få nyhetsbrev: <input type="email" name="email" placeholder="Email"><button id="newsButton">Registrera</button></span>
+  </div>
+
+    <footer>
+      
+      <div>
+          <ul class="nav-footer nav">
+                <li class="active"><a href="../view/contact.html">Kontakta oss</a></li>
+				<li><a href="../view/feedback.html">Lämna Feedback</a></li>
+				<li><a href="../view/questions.html">Vanliga frågor</a></li>
+				<li><a href="../view/jobs.html">Jobb</a></li>
+                <li><a href="#">Om medlemskapet</a></li>
+          </ul>
+      </div>
+
+      <br>
+
+      <div>
+          <ul class="nav-footer nav">			
+              <li><a href="#">Biljetter</a></li>
+              <li><a href="#">Filmer</a></li>
+              <li><a href="#">Nyheter</a></li>
+              <li><a href="#">Biografer</a></li>
+              <li><a href="#">Snacks</a></li>
+              <li><a href="#">Event</a></li>
+              <li><a href="#">Om oss</a>
+                  <div class="social-media">
+                  <a href="#"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+                  <a href="#"><i class="fa fa-twitter   "></i></a>
+                  <a href="#"><i class="fa fa-instagram"></i></a>
+                  </div>
+              </li>
+          </ul>
+      </div>
+
+      <div class="footerLastLine">
+          <div>
+              <p class="copyright"> BioBio ©2018. En del av Olas Popcorn Group</p>
+          </div>
+      </div>
+
+  </footer>
+      
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

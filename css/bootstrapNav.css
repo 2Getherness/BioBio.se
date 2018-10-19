@@ -1,0 +1,191 @@
+.navbar {
+    padding: 20px 30px;
+    background-color: rgb(51, 51, 51);
+}
+.navbar h1 {
+    font-size: 60px;
+    color: white
+}
+.navbar h1::after {
+    content: 'Bio';
+    color: Red
+}
+.navbar h1 {
+    font-family: serif;
+}
+.navbar #navbarSupportedContent ul > li a, #navbarSupportedContent form > button:not(:last-child) {
+    color: white;
+    text-align: center;
+    font-family: serif;
+    text-decoration: none;
+}
+.navbar .form-inline li a:hover, .form-inline  button:hover:not(:last-child) {
+    background-color: rgb(61, 145, 255);
+}
+.navbar li:not(.active) a:hover {
+    background-color: rgb(61, 145, 255);
+}
+
+.navbar li.active {
+    background-color: rgb(236, 17, 17); 
+    color: white;
+    font-size: 25px;
+    border-radius: 5px 5px 5px 5px;
+}
+@media screen and (min-width: 1260px) {
+    .navbar .form-inline input:hover {
+        width: 300px;
+        border: 1px solid black;
+        box-shadow: 0 0 10px 0 rgb(34, 142, 243)
+    }
+}
+
+
+/* .navbar #navbarSupportedContent li:not(:first-child) a:hover:not(.active){
+    background-color: rgb(61, 145, 255);
+} */
+
+
+/*Navigering footer --------------*/
+footer{
+	/* text-shadow: 2px 2px 3px rgba(0,0,0,0.5);
+	box-shadow: 5px 4px 5px rgba(0,0,0,0.2);
+	box-shadow: -3px -3px 5px inset rgba(0,0,0,0.2); 
+    background-image: linear-gradient(135deg, rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.1));*/
+    width: 100%;
+    background-color: rgb(51, 51, 51);
+	height: auto;
+	margin: 0 auto;
+}
+.nav-footer{
+	width: 90%;
+	margin: 0 auto;
+	/* text-align: center; */
+	padding: 0;
+}
+.nav-footer li{
+	display: inline;
+	text-decoration: none;
+	line-height: 1em;
+}
+.nav-footer li a{
+	padding: 0px 20px;
+    color: white;
+}
+.nav-footer li {
+    padding: 10px 0;
+}
+.nav-footer li.active a {
+    font-size: 30px;
+    color: aquamarine
+}
+.nav-footer:first-of-type {
+	padding-top: 25px;
+}
+.nav-footer li a:hover{
+	color: rgb(94, 233, 252);
+}
+.nav-footer .social-media{
+    margin-top: 5px;
+}
+.nav-footer .social-media a{
+    color: white;
+    display: block;
+	font-size: 1.7em;
+	padding: 5px;
+}
+.nav-footer .social-media i:hover{
+    box-shadow: 0 0 10px 0 wheat;
+    background-color: transparent
+}
+.footerLastLine{
+	width: 90%;
+	margin: 30px auto 0 auto;
+}
+.footerLastLine div{
+	display: inline-block;
+	color: #eee4e4;
+}
+.newsLetter {
+    display: flex;
+    padding: 5px 5px;
+	position: fixed;
+	z-index: 2;
+	bottom: 0;
+    right: 0;
+    color: white;
+	padding: 0 10px 0 10px; 
+    background-color: rgb(107, 31, 31);
+    border-radius: 10px 10px 0 0;
+}
+.newsLetter span {
+    padding: 5px 5px;
+}
+#newsButton {
+	background-color: #199401;	
+	border: none;
+	color: #fff;
+    padding: 2px 5px;
+    border-radius: 10px;
+	margin-left: 5px;
+}
+#newsButton:hover {
+    background-color: aquamarine;
+    color: black;
+    border: 1px solid rgb(161, 192, 188);
+    box-shadow: 0 0 10px 0 rgb(216, 216, 226)
+}
+
+/*Ingen hover i mobilversion-----------------*/
+.nav-footer{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    font-size: 1.2em;
+    text-align: center;
+}
+.footerLastLine div p {
+    padding-right: 75px;
+    text-align: center;
+}
+
+
+@media only screen and (max-width: 1225px) {
+
+	.nav-footer{
+		width: 100%;
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		font-size: 1.2em;
+		text-align: center;
+	}
+	.footerLastLine div p {
+		padding-right: 75px;
+		text-align: center;
+	}
+/*Nyhetsbrev registrering------------------*/
+	.newsLetter {        		
+		position: sticky;
+		border-radius: 0;
+	}
+	.newsLetter p {
+		margin: 0;
+		padding: 10px 0;
+	}
+
+}
+
+@media only screen and (max-width: 700px) {
+
+	.nav-footer{
+        grid-template-columns: 1fr 1fr;
+        justify-content: center
+    }
+    .newsLetter span {
+        padding: 0;
+    }
+    .newsLetter #newsButton {
+        margin: 0 auto;
+        font-size: small;
+    }
+}
