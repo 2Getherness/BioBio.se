@@ -23,9 +23,6 @@ main {
 .jobs-article .whole-container .left-div ul a:hover {
     color: rgb(194, 225, 240)
 }
-.jobs-article .whole-container .right-div {
-    border: 1px dashed white;
-}
 .jobs-article .whole-container .right-div ul{
     padding: 30px 40px;
     margin: 0;
@@ -38,10 +35,6 @@ main {
     padding: 0;
     margin: 10px 0;
     text-align: justify;
-}
-.jobs-article .whole-container .left-div, .whole-container .right-div {
-    /* flex-direction: column; */
-
 }
 .jobs-article .whole-container .left-div, .whole-container .right-div {
     width: 50%
