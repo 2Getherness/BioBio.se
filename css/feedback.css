@@ -2,6 +2,9 @@ body {
     background-color: black;
     color: rgb(182, 182, 182);
 }
+.login-section, .register-section {
+    color: black
+}
 main {
     margin: 100px 20%;
 }
@@ -49,6 +52,11 @@ main {
     }
     .name-div {
         display: block;
-        text-align: leftc
+        text-align: left
+    }
+    .name-div .div1,.name-div  .div2,.name-div  .div3{
+        width: 100%;
+    }.name-div .div1 input ,.div2 input, .div3 input{
+        width: 100%;
     }
 }

@@ -10,86 +10,156 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="../css/questions.css">
     <link rel="stylesheet" href="../css/bootstrapNav.css">
+    <link rel="stylesheet" href="../css/login.css">
+    <link rel="stylesheet" href="../css/registeruser.css">
 
   </head>
   <body>
 
-        <section>
-                <article class="nav-article">
-                        <nav class="navbar navbar-expand-lg navbar-dark">
-                                <a class="navbar-brand" href="#"><h1>Bio</h1></a>
-                                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                                  <span class="navbar-toggler-icon"></span>
-                                </button>
-                              
-                                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                                  <ul class="navbar-nav mr-auto">
-                                    <li class="nav-item">
-                                      <a class="nav-link" href="#">Biljetter</a>
-                                    </li>
-                                    <li class="nav-item">
-                                      <a class="nav-link" href="#">Filmer</a>
-                                    </li>
-                                    <li class="nav-item">
-                                      <a class="nav-link" href="../index.html">Nyheter <span class="sr-only">(current)</span></a>
-                                    </li>
-                                    <li class="nav-item">
-                                      <a class="nav-link" href="../view/cenema.html">Biografer</a>
-                                    </li>
-                                    <li class="nav-item">
-                                      <a class="nav-link" href="#">Om Oss</a>
-                                    </li>
-                                    <li class="nav-item">
-                                      <a class="nav-link" href="#">Snacks</a>
-                                    </li>
-                                    <li class="nav-item">
-                                      <a class="nav-link" href="#">Events</a>
-                                    </li>
-                                  </ul>
-                                  <form class="form-inline my-2 my-lg-0">
-                                      <button class="btn btn-link">Registrera</button>
-                                      <button class="btn btn-link">Logga in</button>
-                                    <input class="form-control mr-sm-2" type="search" placeholder="Sök..." aria-label="Search">
-                                    <button class="btn btn my-2 my-sm-0" type="submit"><i class="fa fa-search    "></i></button>
-                                  </form>
-                                </div>
-                              </nav>
-                </article>
-            </section>
+    <section>
+      <article class="nav-article">
+        <nav class="navbar navbar-expand-lg navbar-dark">
+          <a class="navbar-brand" href="#">
+            <h1>Bio</h1>
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+    
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="#">Biljetter</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Filmer</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../index.html">Nyheter
+                  <span class="sr-only">(current)</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../view/cenema.html">Biografer</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Om Oss</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Snacks</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Events</a>
+              </li>
+            </ul>
+            <button class="btn btn-link" onclick="document.getElementById('id02').style.display='block'">Registrera</button>
+            <button class="btn btn-link" onclick="document.getElementById('id01').style.display='block'">Logga in</button>
+    
+            <form class="form-inline my-2 my-lg-0">
+    
+              <input class="form-control mr-sm-2" type="search" placeholder="Sök..." aria-label="Search">
+              <button class="btn btn my-2 my-sm-0" type="submit">
+                <i class="fa fa-search    "></i>
+              </button>
+            </form>
+          </div>
+        </nav>
+      </article>
+    </section>
 
+    <section class="login-section">
+        
+            <div id="id01" class="modal"><div class="logincontainer">
+                    <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+                  </div>
+  
+                <form class="modal-content animate" action="/action_page.php">
+                    
+                  <div class="container">
+                    <label for="uname"><b>Användarnamn</b></label>
+                    <input type="text" placeholder="Ange användarnamn..." name="uname" required>
+              
+                    <label for="psw"><b>Lösenord</b></label>
+                    <input type="password" placeholder="Ange lösenord..." name="psw" required>
+                      
+                    <button type="submit">Logga in</button>
+                    <label>
+                      <input type="checkbox" checked="checked" name="remember"> Komma ihåg mig?
+                    </label>
+                  </div>
+              
+                  <div class="container" style="background-color: white">
+                    <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Avbryta</button>
+                    <span class="psw">Glömt <a href="#">Lösenordet?</a></span>
+                  </div>
+                </form>
+              </div>
+    </section>
+    <section class="register-section">
+        <div id="id02" class="modal">
+            <div class="imgcontainer">
+            <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
+          </div>
+
+        <form class="modal-content animate" action="/action_page.php">
+            
+          <div class="container">
+            <label for="uname"><b>E-post</b></label>
+            <input type="text" placeholder="E-mejl adress..." name="uname" required>
+      
+            <label for="psw"><b>Lösenord</b></label>
+            <input type="password" placeholder="Ange lösenord..." name="psw" required>
+            <label for="psw"><b>Upprepa lösenord</b></label>
+            <input type="password" placeholder="Ange lösenord..." name="psw" required>
+              
+            <button type="submit">Ok</button>
+            <label>
+              <input type="checkbox" checked="checked" name="remember"> Komma ihåg mig?
+            </label>
+          </div>
+      
+          <div class="container" style="background-color: white">
+            <button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn">Avbryta</button>
+            <span class="psw">Glömt <a href="#">Lösenordet?</a></span>
+          </div>
+        </form>
+      </div>
+    </section>
+    
     <main>
         <section>
             <article class="questions-article">
                     <h1>Vanliga frågor</h1>
                 <div class="div1">
-                    <dl class="dl">
+                    <ul class="dl">
                         <li> Film med syntolkning</li>
                         <li> Varför kan jag inte se kommande veckas program?</li>
                         <li> Vad innebär åldersgränserna på filmerna som visas på bio?</li>
                         <li> Var kan jag köpa BioBio presentkort?</li>
                         <li> Hur gör jag för att söka jobb på BioBio?</li>
-                    </dl>
+                    </ul>
                 </div>
                 <h1>Inför besöket</h1>
                 <div class="div2">
-                    <dl>
+                    <ul>
                         <li> Kan jag avboka eller boka om mina betalda biljetter?</li>
                         <li> Hur långt i förväg kan jag köpa mina biobiljetter?</li>
                         <li> Hur kan jag reservera biljetter?</li>
                         <li> Hur länge visas en film på biografen? </li>
                         <li> Kan jag ta med mig mitt spädbarn på bio?</li>
-                    </dl>
+                    </ul>
                 </div>
                 <div class="div3">
                     <span>Vi rekommenderar inte att man tar med sig spädbarn på bio eftersom ljudnivån i en biografsalong är betydligt mer kraftfull och dynamisk än vad barnet är van vid,</span>
                 </div>
                 <h1>Frågor om medlemskap</h1>
                 <div class="div4">
-                    <dl>
+                    <ul>
                         <li> Kan jag avboka eller boka om mina betalda biljetter?</li>
                         <li> Hur långt i förväg kan jag köpa mina biobiljetter?</li>
                         <li> Hur kan jag reservera biljetter?</li>
-                    </dl>
+                    </ul>
                 </div>
             </article>
         </section>
@@ -97,20 +167,20 @@
 
     <div class="newsLetter">
       <span>Få nyhetsbrev: <input type="email" name="email" placeholder="Email"><button id="newsButton">Registrera</button></span>
-  </div>
+    </div>
 
     <footer>
       
       <div>
           <ul class="nav-footer nav">
-                <li><a href="../view/contact.html">Kontakta oss</a></li>
-				<li><a href="../view/feedback.html">Lämna Feedback</a></li>
-				<li class="active"><a href="../view/questions.html">Vanliga frågor</a></li>
-				<li><a href="../view/jobs.html">Jobb</a></li>
-                <li><a href="#">Om medlemskapet</a></li>
+            <li><a href="../view/contact.html">Kontakta oss</a></li>
+            <li><a href="../view/feedback.html">Lämna Feedback</a></li>
+            <li class="active"><a href="../view/questions.html">Vanliga frågor</a></li>
+            <li><a href="../view/jobs.html">Jobb</a></li>
+            <li><a href="../view/membership.html">Om medlemskapet</a></li>
           </ul>
       </div>
-
+      
       <br>
 
       <div>
@@ -137,7 +207,7 @@
           </div>
       </div>
 
-  </footer>
+    </footer>
       
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

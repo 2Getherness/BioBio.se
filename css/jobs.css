@@ -2,8 +2,11 @@ body {
     background-color: black;
     color: rgb(182, 182, 182);
 }
+.login-section, .register-section {
+    color: black
+}
 main {
-    margin: 100px 20%;
+    margin: 200px 20%;
 }
 .jobs-article .whole-container{
     display: flex
@@ -12,8 +15,8 @@ main {
     padding-left: 20px
 }
 .jobs-article .whole-container .left-div .span-div {
-    margin: 30px 22px;
-}
+    padding: 30px 22px;
+} 
 .jobs-article .whole-container .left-div ul a {
     color: rgb(33, 177, 243)
 }
@@ -29,10 +32,12 @@ main {
 }
 .jobs-article .whole-container .right-div p{
     padding: 10px;
+    text-align: justify;
 }
 .jobs-article .whole-container .right-div ul li{
     padding: 0;
     margin: 10px 0;
+    text-align: justify;
 }
 .jobs-article .whole-container .left-div, .whole-container .right-div {
     /* flex-direction: column; */
@@ -44,7 +49,7 @@ main {
 
 @media screen and (max-width: 1100px) {
     main {
-        margin: 200px 2%;
+        margin: 20px 2%;
     }
 }
 @media screen and (max-width: 416px) {
@@ -57,4 +62,13 @@ main {
     .jobs-article .whole-container .left-div, .whole-container .right-div {
         width: 100%
     }
+
+    .jobs-article .left-div h1, .jobs-article .right-div h1 {
+        padding-left: 5px;
+        padding-top: 5px;
+        font-size: 1.5rem
+    }
+    .jobs-article .whole-container .left-div .span-div {
+        padding: 10px 22px;
+    } 
 }

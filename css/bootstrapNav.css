@@ -13,10 +13,26 @@
 .navbar h1 {
     font-family: serif;
 }
-.navbar #navbarSupportedContent ul > li a, #navbarSupportedContent form > button:not(:last-child) {
+/* .navbar #navbarSupportedContent ul > li a, #navbarSupportedContent button:not(:last-child) {
     color: white;
     text-align: center;
     font-family: serif;
+    text-decoration: none;
+} */
+#navbarSupportedContent form button {
+    color: rgb(255, 255, 255);
+    padding: 0;
+    font-size: 25px;
+    background-color: transparent
+}
+#navbarSupportedContent button {
+    color: white;
+    text-align: center;
+    font-family: serif;
+    text-decoration: none;
+}
+#navbarSupportedContent button:hover {
+    background-color: rgb(61, 145, 255);
     text-decoration: none;
 }
 .navbar .form-inline li a:hover, .form-inline  button:hover:not(:last-child) {
@@ -76,8 +92,7 @@ footer{
     padding: 10px 0;
 }
 .nav-footer li.active a {
-    font-size: 30px;
-    color: aquamarine
+    text-shadow: 2px 2px 8px rgb(109, 221, 255);
 }
 .nav-footer:first-of-type {
 	padding-top: 25px;
@@ -187,5 +202,14 @@ footer{
     .newsLetter #newsButton {
         margin: 0 auto;
         font-size: small;
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    .nav-article #navbarSupportedContent a{
+        color: white
+    }
+    .navbar li.active {
+        text-align: center
     }
 }
