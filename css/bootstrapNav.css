@@ -100,16 +100,17 @@ footer{
 .nav-footer li a:hover{
 	color: rgb(94, 233, 252);
 }
-.nav-footer .social-media{
-    margin-top: 5px;
-}
-.nav-footer .social-media a{
-    color: white;
-    display: block;
+.social-media a{
 	font-size: 1.7em;
 	padding: 5px;
 }
-.nav-footer .social-media i:hover{
+.social-media a:nth-child(1) a:nth-child(2) {
+    color: rgb(0, 174, 255)
+}
+.social-media a:nth-child(3) {
+    color: rgb(231, 93, 93)
+}
+.social-media i:hover{
     box-shadow: 0 0 10px 0 wheat;
     background-color: transparent
 }
@@ -130,25 +131,24 @@ footer{
     right: 0;
     color: white;
 	padding: 0 10px 0 10px; 
-    background-color: rgb(107, 31, 31);
+    background-color: rgb(90, 90, 90);
     border-radius: 10px 10px 0 0;
 }
 .newsLetter span {
     padding: 5px 5px;
 }
 #newsButton {
-	background-color: #199401;	
+	background-color: #16150e;	
 	border: none;
-	color: #fff;
-    padding: 2px 5px;
+	color: rgb(218, 216, 217);
+    padding: 10px 10px;
     border-radius: 10px;
 	margin-left: 5px;
 }
 #newsButton:hover {
-    background-color: aquamarine;
+    background-color: rgb(233, 136, 144);
     color: black;
-    border: 1px solid rgb(161, 192, 188);
-    box-shadow: 0 0 10px 0 rgb(216, 216, 226)
+    box-shadow: 0 0 5px 0 rgb(216, 216, 226)
 }
 
 /*Ingen hover i mobilversion-----------------*/
@@ -200,8 +200,17 @@ footer{
         padding: 0;
     }
     .newsLetter #newsButton {
-        margin: 0 auto;
-        font-size: small;
+        font-size: 10px;
+        margin-left: 10px;
+        padding: 5px 5px;
+    }
+    .social-media {
+        text-align: center;
+        width: 100%
+    }
+    .footerLastLine div p{
+        padding: 0;
+        text-align: center
     }
 }
 

@@ -1,0 +1,46 @@
+body {
+    background-color: black;
+    color: rgb(182, 182, 182);
+}
+main {
+    margin: 100px 20%;
+}
+
+.membership-article h1 {
+    font-family: serif;
+}
+
+.membership-article ul > li span{
+    padding-left: 40px
+}
+
+.undertext-article h1 {
+    font-family: serif;
+}
+
+.undertext-article > p {
+    text-align: justify;
+    line-height: 40px
+}
+
+@media screen and (max-width: 1100px) {
+    main {
+        margin: 20px 2%;
+    }
+}
+@media screen and (max-width: 800px) {
+    main {
+        margin: 20px 1%;
+    }
+    .membership-article ul > li span{
+        padding-left: 0
+    }
+    .membership-article h1, .undertext-article h1 {
+        padding-left: 5px;
+        padding-top: 5px;
+        font-size: 1.5rem
+    }
+    .undertext-article > p {
+        line-height: 20px
+    }
+}
