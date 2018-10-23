@@ -49,14 +49,6 @@
     border-radius: 5px 5px 5px 5px;
 }
 
-@media screen and (min-width: 1260px) {
-    .navbar .form-inline #stretchableInput:focus {
-        width:400px;
-        box-shadow: 0 0 10px 0 rgb(34, 142, 243);
-        border: 1px solid black;
-    }
-}
-
 /*Navigering footer --------------*/
 footer{
     width: 100%;
@@ -172,6 +164,19 @@ footer{
     text-align: center;
 }
 
+@media screen and (max-width: 990px) {
+    .form-control {
+        width: 80%;
+    }
+}
+
+@media screen and (min-width: 1260px) {
+    .navbar .form-inline #stretchableInput:focus {
+        width: 400px;
+        box-shadow: 0 0 10px 0 rgb(34, 142, 243);
+        border: 1px solid black;
+    }
+}
 
 @media only screen and (max-width: 1225px) {
 
