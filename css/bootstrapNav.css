@@ -1,40 +1,40 @@
 .navbar {
-    padding: 20px 30px;
     background-color: rgb(51, 51, 51);
 }
+
 .navbar h1 {
     font-size: 60px;
     color: white
 }
+
 .navbar h1::after {
     content: 'Bio';
     color: Red
 }
+
 .navbar h1 {
     font-family: serif;
 }
-/* .navbar #navbarSupportedContent ul > li a, #navbarSupportedContent button:not(:last-child) {
-    color: white;
-    text-align: center;
-    font-family: serif;
-    text-decoration: none;
-} */
+
 #navbarSupportedContent form button {
     color: rgb(255, 255, 255);
     padding: 0;
     font-size: 25px;
     background-color: transparent
 }
+
 #navbarSupportedContent button {
     color: white;
     text-align: center;
     font-family: serif;
     text-decoration: none;
 }
+
 #navbarSupportedContent button:hover {
     background-color: rgb(61, 145, 255);
     text-decoration: none;
 }
+
 .navbar .form-inline li a:hover, .form-inline  button:hover:not(:last-child) {
     background-color: rgb(61, 145, 255);
 }
@@ -48,80 +48,85 @@
     font-size: 25px;
     border-radius: 5px 5px 5px 5px;
 }
+
 @media screen and (min-width: 1260px) {
-    .navbar .form-inline input:hover {
-        width: 300px;
+    .navbar .form-inline #stretchableInput:focus {
+        width:400px;
+        box-shadow: 0 0 10px 0 rgb(34, 142, 243);
         border: 1px solid black;
-        box-shadow: 0 0 10px 0 rgb(34, 142, 243)
     }
 }
 
-
-/* .navbar #navbarSupportedContent li:not(:first-child) a:hover:not(.active){
-    background-color: rgb(61, 145, 255);
-} */
-
-
 /*Navigering footer --------------*/
 footer{
-	/* text-shadow: 2px 2px 3px rgba(0,0,0,0.5);
-	box-shadow: 5px 4px 5px rgba(0,0,0,0.2);
-	box-shadow: -3px -3px 5px inset rgba(0,0,0,0.2); 
-    background-image: linear-gradient(135deg, rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.1));*/
     width: 100%;
     background-color: rgb(51, 51, 51);
 	height: auto;
 	margin: 0 auto;
 }
+
 .nav-footer{
 	width: 90%;
 	margin: 0 auto;
 	/* text-align: center; */
 	padding: 0;
 }
+
 .nav-footer li{
 	display: inline;
 	text-decoration: none;
 	line-height: 1em;
 }
+
 .nav-footer li a{
 	padding: 0px 20px;
     color: white;
 }
+
 .nav-footer li {
     padding: 10px 0;
 }
+
 .nav-footer li.active a {
     text-shadow: 2px 2px 8px rgb(109, 221, 255);
 }
+
 .nav-footer:first-of-type {
 	padding-top: 25px;
 }
+
 .nav-footer li a:hover{
 	color: rgb(94, 233, 252);
 }
+
 .social-media a{
 	font-size: 1.7em;
 	padding: 5px;
 }
+
 .social-media a:nth-child(1) a:nth-child(2) {
     color: rgb(0, 174, 255)
 }
+
 .social-media a:nth-child(3) {
     color: rgb(231, 93, 93)
 }
+
 .social-media i:hover{
     box-shadow: 0 0 10px 0 wheat;
     background-color: transparent
 }
+
 .footerLastLine{
 	width: 90%;
 	margin: 30px auto 0 auto;
 }
+
 .footerLastLine div{
 	display: inline-block;
 	color: #eee4e4;
 }
+
 .newsLetter {
     display: flex;
     padding: 5px 5px;
@@ -134,9 +139,11 @@ footer{
     background-color: rgb(90, 90, 90);
     border-radius: 10px 10px 0 0;
 }
+
 .newsLetter span {
     padding: 5px 5px;
 }
+
 #newsButton {
 	background-color: #16150e;	
 	border: none;
@@ -159,6 +166,7 @@ footer{
     font-size: 1.2em;
     text-align: center;
 }
+
 .footerLastLine div p {
     padding-right: 75px;
     text-align: center;
@@ -173,16 +181,19 @@ footer{
 		grid-template-columns: 1fr 1fr 1fr;
 		font-size: 1.2em;
 		text-align: center;
-	}
+    }
+    
 	.footerLastLine div p {
 		padding-right: 75px;
 		text-align: center;
-	}
+    }
+    
 /*Nyhetsbrev registrering------------------*/
 	.newsLetter {        		
 		position: sticky;
 		border-radius: 0;
-	}
+    }
+    
 	.newsLetter p {
 		margin: 0;
 		padding: 10px 0;
@@ -196,18 +207,22 @@ footer{
         grid-template-columns: 1fr 1fr;
         justify-content: center
     }
+
     .newsLetter span {
         padding: 0;
     }
+
     .newsLetter #newsButton {
         font-size: 10px;
         margin-left: 10px;
         padding: 5px 5px;
     }
+
     .social-media {
         text-align: center;
         width: 100%
     }
+
     .footerLastLine div p{
         padding: 0;
         text-align: center

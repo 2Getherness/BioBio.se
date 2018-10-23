@@ -10,8 +10,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="../css/jobs.css">
     <link rel="stylesheet" href="../css/bootstrapNav.css">
-    <link rel="stylesheet" href="../css/login.css">
-    <link rel="stylesheet" href="../css/registeruser.css">
 
   </head>
   <body>
@@ -48,9 +46,13 @@
                               <a class="nav-link" href="#">Events</a>
                             </li>
                           </ul>
-                          <button class="btn btn-link" onclick="document.getElementById('id02').style.display='block'">Registrera</button>
-                          <button class="btn btn-link" onclick="document.getElementById('id01').style.display='block'">Logga in</button>
-
+                          
+                          <a href="registerUser.html">
+                            <button class="btn btn-link">Registrera</button>
+                          </a>
+                          <a href="login.html">
+                            <button class="btn btn-link">Logga in</button>
+                          </a>
                           <form class="form-inline my-2 my-lg-0">
                               
                             <input class="form-control mr-sm-2" type="search" placeholder="Sök..." aria-label="Search">
@@ -60,65 +62,7 @@
                       </nav>
         </article>
       </section>
-        
-      <section class="login-section">
-        
-        <div id="id01" class="modal"><div class="logincontainer">
-          <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
-        </div>
-        <form class="modal-content animate" action="/action_page.php">
-          
-          <div class="container">
-            <label for="uname"><b>Användarnamn</b></label>
-            <input type="text" placeholder="Ange användarnamn..." name="uname" required>
       
-            <label for="psw"><b>Lösenord</b></label>
-            <input type="password" placeholder="Ange lösenord..." name="psw" required>
-              
-            <button type="submit">Logga in</button>
-            <label>
-              <input type="checkbox" checked="checked" name="remember"> Komma ihåg mig?
-            </label>
-          </div>
-      
-          <div class="container" style="background-color: white">
-            <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Avbryta</button>
-            <span class="psw">Glömt <a href="#">Lösenordet?</a></span>
-          </div>
-        </form>
-        
-        </div>
-      </section>
-      <section class="register-section">
-        <div id="id02" class="modal">
-          <div class="imgcontainer">
-            <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
-          </div>
-            
-        <form class="modal-content animate" action="/action_page.php">
-            
-          <div class="container">
-            <label for="uname"><b>E-post</b></label>
-            <input type="text" placeholder="E-mejl adress..." name="uname" required>
-      
-            <label for="psw"><b>Lösenord</b></label>
-            <input type="password" placeholder="Ange lösenord..." name="psw" required>
-            <label for="psw"><b>Upprepa lösenord</b></label>
-            <input type="password" placeholder="Ange lösenord..." name="psw" required>
-              
-            <button type="submit">Ok</button>
-            <label>
-              <input type="checkbox" checked="checked" name="remember"> Komma ihåg mig?
-            </label>
-          </div>
-      
-          <div class="container" style="background-color: white">
-            <button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn">Avbryta</button>
-            <span class="psw">Glömt <a href="#">Lösenordet?</a></span>
-          </div>
-        </form>
-        </div>
-      </section>
       <main>
         <section>
             <article class="jobs-article">
