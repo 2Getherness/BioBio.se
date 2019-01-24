@@ -1,15 +1,37 @@
 body {
-    background-color: rgb(0, 0, 0)
+    background-color: rgb(56, 46, 46)
 }
 main {
-    margin: 200px 30%
+    margin: 20% 20%
 }
+.registerUser-article {
+  width: 100%;
+}
+#close-registerform {
+   background-color: red;
+   color: white;
+   line-height: 12px;
+   width: 2rem;
+   padding-top: 0.5%;
+   height: 1.5rem;
+   text-align: center;
+   font-family: tahoma;
+   margin-top: 1px;
+   margin-right: 2px;
+   position: fixed;;
+   top:0;
+   right:0;
+}
+  #input_fields {
+    width: 100%;
+   }
 * {
     box-sizing: border-box;
   }
   
   /* style the container */
   .container {
+    width: 100%;
     border-radius: 5px;
     background-color: #f2f2f2;
     padding: 20px 30px;
@@ -18,7 +40,7 @@ main {
   /* style inputs and link buttons */
   input,
   .btn {
-    width: 100%;
+    color: black;
     padding: 12px;
     border: none;
     border-radius: 4px;
@@ -29,24 +51,30 @@ main {
     line-height: 20px;
     text-decoration: none; /* remove underline from anchors */
   }
+  .btn {
+    background-color: rgb(87, 139, 182);
+    width: 100%;
+    color: white
+  }
   
   input:hover,
   .btn:hover {
     opacity: 1;
   }
 
-  .bottom-container .row div:nth-of-type(3) a:hover{
-    background-color: rgb(211, 59, 59)
+  .registerUser-article .row div:nth-of-type(3) a:hover{
+    background-color: rgb(211, 59, 59);
+    color: white
 }
-  .bottom-container .row div:nth-of-type(2) a:hover{
-    background-color: #4CAF50
+  .registerUser-article .row div:nth-of-type(2) a:hover{
+    background-color: #4CAF50;
+    color: white
 }
-  .bottom-container .row div:nth-of-type(1) a:hover{
-    background-color: #4CAF50
+  .registerUser-article .row div:nth-of-type(1) a:hover{
+    background-color: #4CAF50;
+    color: white
 }
-  .bottom-container .row a {
-    color:white
-  }
+  
   
   
   input[type=submit]:hover {
@@ -61,12 +89,12 @@ main {
     padding: 0 50px;
     margin-top: 6px;
   }
-  .bottom-container .col {
-    width: 33%;
+  .registerUser-article row .col {
+ /*    width: 33%; */
   }
   
   /* bottom container */
-  .bottom-container {
+  .registerUser-article row {
     text-align: center;
     background-color: rgb(7, 0, 0);
     border-radius: 0px 0px 4px 4px;
@@ -97,7 +125,7 @@ main {
       margin-top: 0;
       padding: 0 30px;
     }
-    .bottom-container .col {
+    .registerUser-article row .col {
         width: 100%
     }
     main {
